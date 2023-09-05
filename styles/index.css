@@ -59,3 +59,23 @@ ul {
   margin-left: 4px;
   margin-bottom: 35px;
 }
+
+.spacer {
+  height: 100px;
+}
+.image-container {
+  text-align: center;
+  position: relative;
+}
+.rounded-image {
+  border-radius: 15px;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: white;
+  font-family: cursive;
+}
