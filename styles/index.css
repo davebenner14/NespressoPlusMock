@@ -107,31 +107,57 @@ ul {
 }
 
 .time-box {
-  flex: 1;
+  width: 100px;
+
+  height: 120px;
+  align-self: center;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 8px;
-  padding: 16px 0;
+  margin: 0 8px;
   box-sizing: border-box;
+  border-radius: 8px;
 }
-
+.number {
+  margin-bottom: 8px;
+}
 .time-box span {
   margin-top: 8px;
+}
+.time-label {
+  margin-top: 8px;
+}
+.time-box span.number {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.time-box span.time-label {
+  margin-top: 0;
 }
 
 .message {
   width: 50%;
-  font-size: 24px;
+  font-size: 48px;
   text-align: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .responsive-wrapper {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.time-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* This ensures equal spacing between the time-boxes */
+  margin: 0 8px; /* Adjust spacing between each wrapper if needed */
 }
