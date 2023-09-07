@@ -6,6 +6,9 @@ li {
   padding: 0;
   font-size: 24px;
 }
+/* body {
+  padding-top: 60px;
+} */
 
 ul {
   list-style: none;
@@ -18,8 +21,12 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
-
 .navbar-left {
   display: flex;
   align-items: flex-end;
@@ -158,6 +165,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1; /* This ensures equal spacing between the time-boxes */
-  margin: 0 8px; /* Adjust spacing between each wrapper if needed */
+  flex: 1;
+  margin: 0 8px;
 }
