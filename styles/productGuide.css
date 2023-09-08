@@ -1,0 +1,49 @@
+.product-guide-container {
+  display: flex;
+  background-color: white;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-guide-content {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-right: 2em;
+}
+
+.product-guide-content h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.product-guide-content .button {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.product-guide-content .primary {
+  background-color: black;
+  color: white;
+}
+
+.product-guide-content .secondary {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+.product-guide-image {
+  flex: 80%;
+}
+
+.product-guide-image img {
+  width: 100%;
+  height: 500px; /* Adjust this value to your preference */
+  object-fit: cover;
+  border-radius: 15px;
+}
