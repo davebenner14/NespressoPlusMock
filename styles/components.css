@@ -12,7 +12,7 @@
 
 .overlay-text {
   position: absolute;
-  top: 550px;
+  top: 650px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 36px;

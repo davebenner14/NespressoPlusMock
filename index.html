@@ -8,76 +8,19 @@
     <link rel="stylesheet" href="styles/components.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="index.html">
-          <img
-            id="logoFull"
-            src="https://image.isu.pub/191018120732-fef611e3af77778e68c74edd3ed7d146/jpg/page_1.jpg"
-            alt="Nespresso"
-          />
-          <span id="plusText">PLUS</span>
-        </a>
-      </div>
-      <div class="navbar-right">
-        <ul>
-          <li>Product Guide</li>
-          <li>Sales Tools</li>
-          <li>Video Content</li>
-          <li>Training Tools</li>
-          <li>Learning</li>
-        </ul>
-      </div>
-    </nav>
-
     <div class="spacer"></div>
 
-    <!-- Image section -->
-    <div class="responsive-wrapper">
-      <div class="image-container">
-        <img
-          class="main-image"
-          src="https://s7ap1.scene7.com/is/image/brevilleprod/1300x542-Nespresso-New?ts=1658380389255&dpr=off"
-          alt="Nespresso"
-        />
-        <div class="overlay-text">Nespresso. What else?</div>
-      </div>
-    </div>
-
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
     <div class="spacer"></div>
-    <!-- Countdown Section -->
-    <div class="responsive-wrapper">
-      <div class="countdown-container">
-        <div class="countdown">
-          <div class="time-box-wrapper">
-            <div class="time-box">
-              <span class="number" id="days"></span>
-            </div>
-            <span class="time-label">Days</span>
-          </div>
-          <div class="time-box-wrapper">
-            <div class="time-box">
-              <span class="number" id="hours"></span>
-            </div>
-            <span class="time-label">Hours</span>
-          </div>
-          <div class="time-box-wrapper">
-            <div class="time-box">
-              <span class="number" id="minutes"></span>
-            </div>
-            <span class="time-label">Minutes</span>
-          </div>
-          <div class="time-box-wrapper">
-            <div class="time-box">
-              <span class="number" id="seconds"></span>
-            </div>
-            <span class="time-label">Seconds</span>
-          </div>
-        </div>
-        <div class="message">New Lab video on Friday!</div>
-      </div>
-    </div>
+
+    <!-- Placeholder for Image section -->
+    <div id="image-section-placeholder"></div>
+    <div class="spacer"></div>
+
+    <!-- Placeholder for Countdown section -->
+    <div id="countdown-section-placeholder"></div>
+    <div class="spacer"></div>
 
     <!-- Main Content -->
     <main>
@@ -90,5 +33,9 @@
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/imageSection.js"></script>
+    <script src="scripts/countdownSection.js"></script>
   </body>
 </html>
