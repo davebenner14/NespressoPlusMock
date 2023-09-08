@@ -1,0 +1,26 @@
+body,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+body {
+  padding-top: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.responsive-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}

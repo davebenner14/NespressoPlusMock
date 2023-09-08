@@ -10,7 +10,13 @@ function countdown() {
     target.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
   }
 
-  const diff = target - now;
+  let diff = target - now;
+
+  // Reset the countdown if it's Friday after 7am
+  if (diff < 0) {
+    target.setDate(target.getDate() + 7); // add 7 days to the target
+    diff = target - now;
+  }
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
