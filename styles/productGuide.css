@@ -21,8 +21,9 @@
 }
 
 .product-guide-content .button {
+  display: inline-block;
   padding: 0.5em 1em;
-  border-radius: 8px;
+  border-radius: 20px;
   text-decoration: none;
 }
 
@@ -43,7 +44,18 @@
 
 .product-guide-image img {
   width: 100%;
-  height: 500px; /* Adjust this value to your preference */
+  height: 500px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 25px;
+}
+.product-guide-content .primary:hover {
+  background-color: #444141;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-guide-content .secondary:hover {
+  border-color: #333;
+  color: #333;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }

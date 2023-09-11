@@ -88,3 +88,13 @@
 .dropdown-content li:hover {
   background-color: #575757;
 }
+.navbar-right ul li,
+.navbar-left a,
+.dropdown-content li {
+  cursor: pointer;
+}
+
+.navbar-right ul li:hover,
+.dropdown-content li:hover {
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
