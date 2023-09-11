@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <h2>Product Guide</h2>
               <p>Spec sheets, product information and so much more.</p>
               <a href="#" class="button primary">View Product Guide</a>
-              <p>Our highly anticipated Product Guide revamp is coming soon… click to get a sneak peak!</p>
+              <p>Our highly anticipated Product Guide revamp is coming soon… click to get a sneak peek!</p>
               <a href="#" class="button secondary">Learn More</a>
             </div>
             <div class="product-guide-image">
