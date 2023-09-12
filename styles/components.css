@@ -41,7 +41,7 @@
 
 .countdown {
   display: flex;
-  width: 50%;
+  width: 60%;
 }
 
 .time-box {
@@ -70,7 +70,7 @@
 }
 
 .message {
-  width: 50%;
+  width: 40%;
   font-size: 48px;
   text-align: center;
   display: flex;
@@ -85,6 +85,27 @@
   flex: 1;
   margin: 0 8px;
 }
+
+@media (max-width: 768px) {
+  .countdown,
+  .message {
+    width: 100%;
+  }
+
+  .countdown-container {
+    flex-direction: column;
+  }
+
+  .time-box {
+    width: 80px;
+    height: 100px;
+  }
+
+  .message {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 600px) {
   .video-link {
     flex-basis: 100%;
