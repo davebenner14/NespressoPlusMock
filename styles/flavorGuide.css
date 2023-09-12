@@ -1,0 +1,69 @@
+/* Flavor Guide Styles */
+#flavor-guide {
+  padding: 2em;
+  background-color: #f9f9f9; /* Off-white background */
+}
+
+.flavor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow-y: auto; /* For scrolling if content exceeds viewport height */
+  max-height: 500px; /* You can adjust this based on your design preference */
+}
+
+.flavor-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.flavor-card img {
+  width: 70%; /* Adjust as needed */
+  border-radius: 10px;
+}
+
+.flavor-card h3 {
+  font-size: 1.2em;
+  color: #333; /* Dark gray text */
+}
+
+.flavor-card p {
+  font-size: 1em;
+  text-align: center;
+  color: #555; /* Gray text */
+}
+
+.flavor-card h3 {
+  font-size: 1.3em;
+  color: #333; /* Dark gray text */
+  margin: 0;
+}
+
+.serving-size {
+  background-color: #f0f0f0; /* light gray */
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 1em;
+  color: #555; /* Gray text */
+}
+
+.description {
+  font-size: 1.1em;
+  text-align: center;
+  color: #555; /* Gray text */
+  margin: 5px 0;
+}
+
+.intensity {
+  font-size: 1em;
+  text-align: center;
+  color: #777; /* Slightly lighter gray */
+  margin: 5px 0;
+}
