@@ -1,15 +1,31 @@
 /* Flavor Guide Styles */
 #flavor-guide {
   padding: 2em;
-  background-color: #f9f9f9; /* Off-white background */
+}
+
+.flavor-guide-outer-container {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .flavor-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1em;
-  overflow-y: auto; /* For scrolling if content exceeds viewport height */
-  max-height: 500px; /* You can adjust this based on your design preference */
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  max-height: 500px;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.flavor-container::-webkit-scrollbar {
+  display: none;
 }
 
 .flavor-card {
@@ -21,49 +37,84 @@
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  min-width: 200px;
 }
 
 .flavor-card img {
-  width: 70%; /* Adjust as needed */
+  width: 30%;
   border-radius: 10px;
-}
-
-.flavor-card h3 {
-  font-size: 1.2em;
-  color: #333; /* Dark gray text */
 }
 
 .flavor-card p {
   font-size: 1em;
   text-align: center;
-  color: #555; /* Gray text */
+  color: #555;
 }
 
 .flavor-card h3 {
   font-size: 1.3em;
-  color: #333; /* Dark gray text */
+  color: #333;
   margin: 0;
 }
 
 .serving-size {
-  background-color: #f0f0f0; /* light gray */
+  background-color: #f0f0f0;
   padding: 0.2em 0.5em;
   border-radius: 5px;
   margin: 5px 0;
   font-size: 1em;
-  color: #555; /* Gray text */
+  color: #555;
 }
 
 .description {
   font-size: 1.1em;
   text-align: center;
-  color: #555; /* Gray text */
+  color: #555;
   margin: 5px 0;
 }
 
 .intensity {
   font-size: 1em;
   text-align: center;
-  color: #777; /* Slightly lighter gray */
+  color: #777;
   margin: 5px 0;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+#left-arrow {
+  left: 10px;
+}
+
+#right-arrow {
+  right: 10px;
+}
+
+.flavor-guide-outer-container,
+.product-guide-container {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.arrow {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#flavor-guide-title {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .video-link {
+    flex-basis: 100%;
+  }
 }
