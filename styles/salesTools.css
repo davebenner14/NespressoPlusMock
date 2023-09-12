@@ -1,0 +1,30 @@
+.sales-tools-container {
+  padding: 2em;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-tools-container h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.video-grid {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.video-link img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-link:hover img {
+  transform: scale(1.05);
+}
