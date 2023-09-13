@@ -37,12 +37,6 @@
   border-radius: 10px;
 }
 
-@media (max-width: 600px) {
-  .video-link {
-    flex-basis: 100%;
-  }
-}
-
 .video-description {
   position: absolute;
   bottom: 10%;
@@ -59,4 +53,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .video-link {
+    width: 100%;
+  }
+
+  .sales-tools-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.8em;
+  }
+
+  .video-description {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-link {
+    flex-basis: 100%;
+  }
 }
