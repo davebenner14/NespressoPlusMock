@@ -1,12 +1,30 @@
-.image-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.rounded-image {
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.image-container {
+  width: 100vw !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.image-container .main-image {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+}
+
+.rounded-image,
+.image-container .main-image {
   border-radius: 15px;
 }
 
@@ -23,7 +41,8 @@
 
 .image-container .main-image {
   flex: 1;
-  border-radius: 15px;
+  width: 100%;
+  height: auto;
 }
 
 .countdown-container {
@@ -33,9 +52,14 @@
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   padding: 2vw;
-  width: 100%;
-  max-width: 1300px;
+  width: 100vw !important;
+  max-width: 100% !important;
   margin: 2vw auto;
+  box-sizing: border-box;
+}
+.countdown,
+.message {
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -45,8 +69,9 @@
 }
 
 .time-box {
-  width: 100px;
-  height: 120px;
+  width: 20%;
+  height: auto;
+  padding: 8% 0;
   align-self: center;
   background-color: black;
   color: white;
@@ -54,7 +79,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 8px;
+  margin: 0 2%;
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -87,26 +112,67 @@
 }
 
 @media (max-width: 768px) {
+  .overlay-text {
+    font-size: 24px;
+    top: 60%;
+  }
+
   .countdown,
   .message {
     width: 100%;
   }
 
-  .countdown-container {
+  .countdown-container,
+  .image-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .time-box {
-    width: 80px;
-    height: 100px;
+    width: 70px;
+    height: 90px;
+    margin: 0 8px;
   }
 
   .message {
-    font-size: 32px;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .countdown,
+  .message {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    font-size: 20px;
+    top: 55%;
+  }
+
+  .time-box {
+    width: 50px;
+    height: 60px;
+    margin: 0 3px;
+  }
+
+  .message {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 600px) {
+  .time-box {
+    width: 60px;
+    height: 72px;
+    margin: 0 4px;
+  }
+
+  .message {
+    font-size: 24px;
+  }
+
   .video-link {
     flex-basis: 100%;
   }
