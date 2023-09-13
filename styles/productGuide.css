@@ -39,7 +39,7 @@
 }
 
 .product-guide-image {
-  flex: 80%;
+  flex: 70%;
 }
 
 .product-guide-image img {
@@ -48,6 +48,7 @@
   object-fit: cover;
   border-radius: 25px;
 }
+
 .product-guide-content .primary:hover {
   background-color: #444141;
   transition: background-color 0.3s ease-in-out;
@@ -59,6 +60,30 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .product-guide-container {
+    flex-direction: column;
+  }
+
+  .product-guide-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .product-guide-content h2 {
+    font-size: 1.5em;
+  }
+
+  .product-guide-content .button {
+    padding: 0.4em 0.8em;
+  }
+
+  .product-guide-image img {
+    height: 300px; /* adjust as needed */
+  }
+}
+
 @media (max-width: 600px) {
   .video-link {
     flex-basis: 100%;
