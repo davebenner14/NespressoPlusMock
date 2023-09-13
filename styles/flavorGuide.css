@@ -118,3 +118,67 @@
     flex-basis: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .flavor-guide-outer-container {
+    padding: 1em;
+  }
+
+  .flavor-container {
+    gap: 0.5em;
+  }
+
+  .flavor-card {
+    min-width: 150px;
+    padding: 0.5em;
+  }
+
+  .flavor-card img {
+    width: 50%;
+  }
+
+  .flavor-card h3 {
+    font-size: 1.2em;
+  }
+
+  .flavor-card p,
+  .description,
+  .intensity,
+  .serving-size {
+    font-size: 0.9em;
+  }
+
+  .arrow {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flavor-card {
+    min-width: 120px;
+    padding: 0.4em;
+  }
+
+  .flavor-card img {
+    width: 60%;
+  }
+
+  .flavor-card h3 {
+    font-size: 1.1em;
+  }
+
+  .flavor-card p,
+  .description,
+  .intensity,
+  .serving-size {
+    font-size: 0.8em;
+  }
+
+  #left-arrow {
+    left: 5px;
+  }
+
+  #right-arrow {
+    right: 5px;
+  }
+}
